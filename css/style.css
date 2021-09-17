@@ -1,0 +1,520 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.clr{
+    clear: both;
+}
+
+.full-wrapper{
+    width: 100%;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* ===================
+    common css ends
+==================== */
+@font-face{
+    font-family: 'open-reg';
+    src:url(../webfonts/opensans/OpenSans-Regular.ttf);
+}
+
+/* 
+font-family: 'Oswald', sans-serif;
+ */
+
+/* ==========================
+    font import css ends
+=========================== */
+.mr-20{
+    margin-right: 20px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+/* ==========================
+    spacing css ends
+=========================== */
+.heading{
+    position: relative;
+}
+.heading h3{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #353535;
+    text-align: center;
+}
+
+.heading .heading-line{
+    position: absolute;
+    bottom: -3px;
+}
+
+.heading .line{
+    background: #0872b9;
+    display: inline-block;
+    height: 1px;
+}
+
+.heading .line1{
+    width: 47px;
+}
+.heading .line2{
+    width: 3px;
+}
+.heading .line3{
+    width: 2px;
+}
+.heading .line4{
+    width: 1px;
+}
+
+/* ==========================
+    heading css ends
+=========================== */
+.header-bg{
+    background-color: #0872b9;
+    height: 32px;
+}
+.header-bg .header{
+    height: 32px;
+}
+.header-bg .header .header-text{
+    height: 32px;
+    width: 140px;
+    float: left;
+}
+.header-bg .header .header-text p{
+    font-family: 'open-reg';
+    font-size: 14px;
+    line-height: 32px;
+    color: #e7e7e7;
+    text-transform: capitalize;
+}
+
+.header-bg .header .header-social{
+    height: 32px;
+    width: 800px;
+    float: left;
+}
+
+.header-bg .header .header-social ul{
+    float: right;
+}
+
+.header-bg .header .header-social ul li{
+    float: left;
+}
+.header-bg .header .header-social ul li a i{
+    font-size: 14px;
+    line-height: 32px;
+    margin-left: 24px;
+    color: #e7e7e7;
+    transition: all linear .4s;
+}
+
+.header-bg .header .header-social ul li a i:hover{
+    color: #353535;
+}
+
+/* ====================
+    header css ends
+==================== */
+.menu-bg{
+    height: 80px;
+}
+.menu-bg .menu{
+    height: 80px;
+}
+.menu-bg .menu .logo{
+    height: 80px;
+    width: 80px;
+    float: left;
+}
+
+.menu-bg .menu .logo a img{
+    width: 100%;
+    padding-top: 20px;
+}
+.menu-bg .menu .menu-list{
+    height: 80px;
+    width: 860px;
+    float: left;
+}
+
+.menu-bg .menu .menu-list ul{
+    float: right;
+}
+
+.menu-bg .menu .menu-list ul li{
+    float: left;
+}
+
+.menu-bg .menu .menu-list ul li a{
+    line-height: 80px;
+    font-family: 'open-reg';
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #353535;
+    transition: all linear 0.4s;
+    padding-left: 16px;
+}
+
+.menu-bg .menu .menu-list ul li a:hover{
+    color: #0872b9;
+}
+/* ====================
+    menu css ends
+==================== */
+.banner-bg{
+    height: 400px;
+    background: url(../images/banner-bg.jpg)  no-repeat center  / cover;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-bg::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.banner-bg .banner{
+    height: 400px;
+    text-align: right;
+}
+
+.banner-bg .banner h4{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 78px;
+}
+.banner-bg .banner h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: -10px;
+}
+
+.banner-bg .banner p{
+    font-family: 'open-reg';
+    font-size: 13px;
+    color: #fff;
+    line-height: 24px;
+    padding-left: 480px;
+    padding-top: 10px;
+}
+
+.banner-bg .banner a{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 31px;
+    padding: 0 16px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+    transition: all linear .4s;
+}
+
+.banner-bg .banner a:hover{
+    border-color: #0872b9;
+}
+
+.banner-bg .banner a::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    background-color: #0872b9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all linear .4s;
+}
+
+.banner-bg .banner a:hover::before{
+    width: 100%;
+}
+
+.banner-bg .banner a:last-of-type{
+    margin-left: 16px;
+}
+
+/* ====================
+    banner css ends
+==================== */
+.about-bg{
+    height: 330px;
+    margin-top: 60px;
+}
+
+.about-bg .about{
+    height: 330px;
+
+}
+
+.about-bg .about .about-heading{
+    height: 65px;
+
+}
+
+.about-bg .about .about-heading .heading-line{
+    left: 422px;
+}
+
+.about-bg .about .about-content{
+    height: 265px;
+}
+
+.about-bg .about .about-content .about-image{
+    width: 380px;
+    height: 265px;
+    float: left;
+}
+.about-bg .about .about-content .about-image img{
+    width: 100%;
+    filter: grayscale(0.5);
+    -webkit-filter: grayscale(0.5);
+}
+
+.about-bg .about .about-content .about-text{
+    width: 540px;
+    height: 265px;
+    float: left;
+}
+
+.about-bg .about .about-content .about-text p{
+    font-family: 'open-reg';
+    font-size: 13px;
+    color: #555555;
+    line-height: 24px;
+    padding-top: 37px;
+}
+
+.about-bg .about .about-content .about-text p:last-of-type{
+    padding-top: 25px;
+}
+
+
+/* ====================
+    about css ends
+==================== */
+.service-bg{
+    height: 260px;
+    margin-top: 60px;
+}
+.service-bg .service{
+    height: 260px;
+
+}
+
+.service-bg .service .service-heading{
+    height: 90px;
+
+}
+
+.service-bg .service .service-heading .heading-line{
+    left: 402px;
+}
+
+.service-bg .service .service-content{
+    height: 170px;
+
+}
+
+.service-bg .service .service-content .service-item{
+    width: 300px;
+    height: 170px;
+    background: #f1f1f1;
+    float: left;
+    position: relative;
+    text-align: center;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+
+.service-bg .service .service-content .service-item:hover{
+    /*box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    */filter: drop-shadow(0px 0px 5px rgba(0,0,0,.2));
+    -webkit-filter: ;
+}
+
+.service-bg .service .service-content .service-item .icon{
+    width: 69px;
+    height: 69px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: -34.5px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+    transition: all linear 0.5s;
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+}
+
+.service-bg .service .service-content .service-item:hover .icon{
+    background: #5bc5f4;
+}
+
+.service-bg .service .service-content .service-item .icon img{
+    padding-top: 15px;
+}
+
+.service-bg .service .service-content .service-item .border{
+    width: 75px;
+    height: 75px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: -37.5px;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: all linear 0.5s;
+}
+
+.service-bg .service .service-content .service-item:hover .border{
+    border-color: #5bc5f4;;
+}
+
+.service-bg .service .service-content .service-item h5{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #353535;
+    text-transform: uppercase;
+    padding-top: 45px;
+}
+
+.service-bg .service .service-content .service-item p{
+    font-family: 'open-reg';
+    font-size: 13px;
+    color: #555;
+    line-height: 24px;
+    padding: 20px;
+    margin-top: -10px;
+}
+/* ====================
+    service css ends
+==================== */
+.gallery-bg{
+    margin-top: 60px;
+}
+
+.gallery-bg .gallery .heading-line{
+    left: 395px;
+}
+
+.gallery-bg .gallery .gallery-item-col{
+    width: 220px;
+    float: left;
+    margin-top: 30px;
+}
+
+.gallery-bg .gallery .gallery-item-row .gallery-item{
+    position: relative;
+}
+
+.gallery-bg .gallery .gallery-item-row .gallery-item .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.gallery-bg .gallery .gallery-item-row .gallery-item:hover .overlay{
+    opacity: 1;
+}
+
+.gallery-bg .gallery .gallery-item-row .gallery-item .overlay i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    background: #5bc5f4;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.gallery-bg .gallery .gallery-item-col .gallery-item .overlay .gl-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+/* ====================
+    gallery css ends
+==================== */
+
+.team-bg{
+    height: 600px;
+    background: #ca0202;
+}
